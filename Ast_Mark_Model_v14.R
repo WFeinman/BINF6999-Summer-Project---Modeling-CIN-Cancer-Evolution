@@ -139,6 +139,7 @@ simulate_MC <- function(pA, pB, w, sigmaA_gain, sigmaA_loss, sigmaB_gain, sigmaB
 
 calc_log_likelihood <- function(obs_data, pred_dist) {
   ll <- 0
+  epsilon <- 1e-3
   #1e^-3 used for the epsilon parameter, as it best matches the smallest possibility this dataset can distinguish from zero (1/939).
   for (i in 1:nrow(obs_data)) {
     x <- obs_data$chrom_bin[i]
