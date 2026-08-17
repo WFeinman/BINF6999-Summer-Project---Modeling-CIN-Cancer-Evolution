@@ -153,7 +153,7 @@ calc_log_likelihood <- function(obs_data, pred_dist) {
 }
 
 
-# Note: The specified paramater range below is specific to the Mitelman Astrocytoma data, and represent a compromise between a fully exhaustive grid search and ease of reproducibility without a large computing cluster. This example grid search iterates through 165888 parameter combinations. On a single 4.70 GHz CPU using 23 threads, this took about 55 minutes to perform. Increasing the parameter range or fidelity will result in a better fit to the data, but take exponentially more computational resources.
+# Note: The specified paramater range below is specific to the Mitelman Pancreas Adenocarcinoma data, and represent a compromise between a fully exhaustive grid search and ease of reproducibility without a large computing cluster. Increasing the parameter range or fidelity will result in a better fit to the data, but take exponentially more computational resources.
 
 # pA: Missegregation chance per chromosome of Group A cells.
 # pB: Missegregation chance per chromosome of Group B cells.
